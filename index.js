@@ -106,7 +106,9 @@ module.exports = function (grunt, loadConfig) {
         config: config
     }));
 
+    // Config overrides
     grunt.config.set('watch', _.defaults(config.ft.watch, grunt.config.get('watch')));
+    grunt.config.set('jshint', _.defaults(config.ft.jshint, grunt.config.get('jshint')));
 
     grunt.loadTasks(path.join(process.cwd(), 'node_modules/ft-frontend-build/tasks'));
 

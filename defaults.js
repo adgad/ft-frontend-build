@@ -13,6 +13,7 @@ module.exports = {
     blocks: ['clean', 'tpl', 'js', 'css', 'polyfill', 'assets'],
     skipBlocks: [],
     watch: {},
+    jshint: {},
     templating: {type: ''}
 };
 
